@@ -13,3 +13,5 @@ export async function POST(request) {
         return NextResponse.json({message: "アイテム作成失敗！"})
     }
 }
+
+// sub1のマージテスト
