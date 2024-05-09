@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 export async function middleware(request) {
 
-    const token = "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFyYW1ha2l0YWtldG9AZ21haWwuY29tIiwiZXhwIjoxNzEzNjAwOTQ5fQ.BU-4VW2jxowGFUgOIV4MrLkYD2AMVKhAZjToGVD9Kqk"
+    const token = "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImR1bW15QGdhbWlsLmNvbSIsImV4cCI6MTcxNTIyMjc1OH0.q1gjxruoGVKj7q4UA-esgX6UBi1yDusW1LK903oGwOo"
     // const token = await request.headers.get("Authorization")?.sprit(" ")[1]
 
     if(!token){

@@ -10,6 +10,7 @@ export async function POST(request) {
         await UserModel.create(reqBody)
         return NextResponse.json({message: "User created successfully"})
     } catch (error) {
+        console.log(error)
         return NextResponse.json({message: "User creation failed"})
     }
 }
