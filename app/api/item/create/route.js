@@ -1,4 +1,3 @@
-import { connect } from "mongoose";
 import { NextResponse } from "next/server";
 import connectDB from "../../../utils/database";
 import Item, { ItemModel } from "../../../utils/schemaModels";
@@ -13,5 +12,3 @@ export async function POST(request) {
         return NextResponse.json({message: "アイテム作成失敗！"})
     }
 }
-
-// sub1のマージテスト
