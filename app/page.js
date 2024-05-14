@@ -2,6 +2,8 @@ import Link from "next/link"
 import Image from "next/image"
 
 const getAllItems = async() => {
+    const apiUrl = `${process.env.NEXT_PUBLIC_URL}/api/item/readall`;
+    console.log("Fetching from URL:", apiUrl); // 追加: URLをコンソールに出力
   const response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/item/readall`, {cache: "no-store"})
   const jsonData = await response.json()
   const allItems = jsonData.allItems
